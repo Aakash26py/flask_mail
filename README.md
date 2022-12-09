@@ -1,3 +1,5 @@
+<h3>objective - Use flask to send emails </h3>
+<br>
 <ul>
 <li>Step 1 - clone the repository</li>
 <li>step 2 - run pip install -r requirements.txt to install all the dependecies</li>
