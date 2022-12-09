@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>contact form</title>
+</head>
+
+<body>
+
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Send Mail</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" action = "{{url_for('send_message')}}" method="POST">
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">From</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="from_email" class="fcf-form-control" placeholder="name@example.com" required>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">To</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="to_email" class="fcf-form-control" placeholder="name@example.com" required>
+            </div>
+        </div>
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Subject</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="10" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+    </form>
+    </div>
+
+</div>
+
+</body>
+</html>
